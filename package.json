@@ -1,0 +1,57 @@
+{
+  "name": "c3fmt",
+  "displayName": "c3fmt",
+  "description": "A code formatter for the C3 language.",
+  "version": "1.0.0",
+  "publisher": "lmichaudel",
+  "icon": "images/c3fmt_logo.png",
+  "repository": "https://github.com/lmichaudel/c3fmt-vscode",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:c3"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "c3",
+        "aliases": ["C3", "c3"],
+        "extensions": [".c3", ".c3i", ".c3t"]
+      }
+    ],
+    "configuration": {
+      "title": "c3fmt",
+      "properties": {
+        "c3fmt.path": {
+          "type": "string",
+          "default": "c3fmt",
+          "description": "Path to the c3fmt executable"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.48.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
