@@ -4,7 +4,7 @@
   "description": "A code formatter for the C3 language.",
   "version": "1.0.0",
   "publisher": "lmichaudel",
-  "icon": "images/c3fmt_logo.png",
+  "icon": "images/c3fmt_logo_squared.png",
   "repository": "https://github.com/lmichaudel/c3fmt-vscode",
   "license": "MIT",
   "engines": {
