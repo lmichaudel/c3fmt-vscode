@@ -1,7 +1,2 @@
-# c3fmt
-
-Allow you to use [c3fmt](https://github.com/lmichaudel/c3fmt) inside VS Code !
-
-## Extension Settings
-
-* `c3fmt.path`: Path of the `c3fmt` executable.
+# c3fmt-vscode
+This is depreciated as c3fmt is now supported by the official [C3 VS Code Extension](https://marketplace.visualstudio.com/items?itemName=c3.vscode-c3).
